@@ -1,0 +1,75 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "_artifactsLocation": {
+      "value": "https://raw.githubusercontent.com/Microsoft/openshift-origin/master"
+    },
+    "masterVmSize": {
+      "value": "Standard_DS3"
+    },
+    "infraVmSize": {
+      "value": "Standard_DS3"
+    },
+    "nodeVmSize": {
+      "value": "Standard_DS4"
+    },
+    "storageKind": {
+      "value": "managed"
+    },
+    "openshiftClusterPrefix": {
+      "value": "osodev"
+    },
+    "masterInstanceCount": {
+      "value": 3
+    },
+    "infraInstanceCount": {
+      "value": 3
+    },
+    "nodeInstanceCount": {
+      "value": 7
+    },
+    "dataDiskSize": {
+      "value": 256
+    },
+    "adminUsername": {
+      "value": "osoadmin"
+    },
+    "openshiftPassword": {
+      "value": "osoadmin09*"
+    },
+    "enableMetrics": {
+      "value": "false"
+    },
+    "enableLogging": {
+      "value": "true"
+    },
+    "sshPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEnPrfZNXXKbUEVpXb272mUmuNO+4ZJK3dKecB9LNurxkBLD4nMti8ZvjWDAuvYj98Z4w/m54ol1Xvc9jqwpb2JdFd5o3Ab4ciPmAd7uRBrUr63xs0/9T1/6p1sVZWa2LBbsSXnOfbNOY+Vne5Ysro+VlpAAOuwm8VQfvBsJBDQ2Q04fMu5K6Q3QEnwuCm7XJvKh1x5CAL7D4OOmDJOXVTZmLLIP0YZHaMEGXNjeq/jUpSASFLjDjmzOggmfbeb7MfpYhV9gghGSwr2Mj9b1+HVaSBLazSbl8vvHQudk+T+8mjdyW8SI23gkwOdV+Kc1tOnC+pQJsozp7hpV83VOrL edisonmacabebe@Edisons-MacBook-Pro.local"
+    },
+    "keyVaultResourceGroup": {
+      "value": "INGAsiaDevOSO"
+    },
+    "keyVaultName": {
+      "value": "INGAsiaDevOSO-kv"
+    },
+    "keyVaultSecret": {
+      "value": "INGAsiaDevOSO-secret"
+    },
+    "enableAzure": {
+      "value": "true"
+    },
+    "aadClientId": {
+      "value": "79456957-2a47-4a84-8b8b-54fdf4198240"
+    },
+    "aadClientSecret": {
+      "value": "imjhdkbumdciUJ32"
+    },
+    "defaultSubDomainType": {
+      "value": "nipio"
+    },
+    "defaultSubDomain": {
+      "value": "changeme"
+    }
+  }
+}
